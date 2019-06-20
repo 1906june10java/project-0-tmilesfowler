@@ -1,5 +1,9 @@
 package com.revature;
 
+import java.io.IOException;
+
+import com.revature.controller.ControlHandler;
+
 /** 
  * Create an instance of your controller and launch your application.
  * 
@@ -7,7 +11,9 @@ package com.revature;
  */
 public class Main {
 
-	public static void main(String[] args) {
-
+	public static void main(String[] args) throws IOException {
+		
+		ControlHandler control = new ControlHandler();
+		control.userInput();
 	}
 }
