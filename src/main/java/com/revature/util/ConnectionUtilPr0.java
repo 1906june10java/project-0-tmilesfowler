@@ -27,7 +27,6 @@ public class ConnectionUtilPr0 {
 				getConnection();
 				LOGGER.info("Connection successful");
 			} catch (SQLException e) {
-				System.out.println("check 3");
 				LOGGER.error("Could not connect.", e);
 			}
 		}
