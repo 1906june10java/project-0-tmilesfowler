@@ -4,7 +4,7 @@ import com.revature.model.UserAccount;
 
 public interface UserAccountRepository {
 
-	public UserAccount getUserAcct(UserAccount User);
+	public UserAccount getUserAcct(String user);
 	
 	public String checkUsername(String user);
 	

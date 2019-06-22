@@ -14,7 +14,7 @@ public class ConnectionUtilPr0 {
 		private static final Logger LOGGER = Logger.getLogger(ConnectionUtilPr0.class);
 		
 		public static Connection getConnection() throws SQLException {
-			LOGGER.setLevel(Level.TRACE);
+			LOGGER.setLevel(Level.DEBUG);
 			String url = "jdbc:oracle:thin:@myrevaturerds.ck0lmtvj5bg5.us-east-2.rds.amazonaws.com:1521:ORCL";
 			String username = "tmilesfowler";
 			String password = "Milomio12!";

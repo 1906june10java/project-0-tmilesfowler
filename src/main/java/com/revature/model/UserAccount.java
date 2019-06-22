@@ -1,6 +1,6 @@
 package com.revature.model;
 
-public class UserAccount implements Comparable{
+public class UserAccount implements Comparable<Object>{
 
 	long idNum = 1;
 	String userName = "revature";
@@ -104,6 +104,11 @@ public class UserAccount implements Comparable{
 	public String toString() {
 		return "UserAccount [idNum=" + idNum + ", userName=" + userName + ", passWord=" + passWord + ", balance="
 				+ balance + "]";
+	}
+	
+	public String [] toStrArray() {
+		String [] temp = {String.valueOf(idNum), userName, passWord, String.valueOf(balance)};
+		return temp;
 	}
 
 	@Override

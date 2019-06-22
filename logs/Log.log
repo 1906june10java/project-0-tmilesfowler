@@ -112,3 +112,146 @@ java.sql.SQLException: ORA-01017: invalid username/password; logon denied
 2019-06-21 11:43:18 ERROR ConnectionUtilPr0:29 - Connection successful
 2019-06-21 11:43:54 WARN  ConnectionUtilPr0:28 - Connection successful
 2019-06-21 11:52:40 INFO  ConnectionUtilPr0:30 - Connection successful
+2019-06-22 12:11:29 INFO  ConnectionUtilPr0:28 - Connection successful
+2019-06-22 12:11:29 INFO  ConnectionUtilPr0:28 - Connection successful
+2019-06-22 12:17:34 INFO  ConnectionUtilPr0:28 - Connection successful
+2019-06-22 12:21:03 ERROR UserAccountRepojdbc:43 - Account no found
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getLong(GeneratedResultSet.java:1361)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:36)
+	at com.revature.Main.main(Main.java:17)
+2019-06-22 12:22:22 INFO  ConnectionUtilPr0:28 - Connection successful
+2019-06-22 12:26:47 ERROR UserAccountRepojdbc:43 - Account not found
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getLong(GeneratedResultSet.java:1361)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:36)
+	at com.revature.Main.main(Main.java:17)
+2019-06-22 12:28:41 ERROR UserAccountRepojdbc:43 - Account not found
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getLong(GeneratedResultSet.java:1361)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:36)
+	at com.revature.Main.main(Main.java:17)
+2019-06-22 12:29:45 ERROR UserAccountRepojdbc:45 - Account not found
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getLong(GeneratedResultSet.java:1361)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:38)
+	at com.revature.Main.main(Main.java:17)
+2019-06-22 12:31:33 ERROR UserAccountRepojdbc:45 - Account not found
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getLong(GeneratedResultSet.java:1361)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:38)
+	at com.revature.Main.main(Main.java:17)
+2019-06-22 12:32:04 ERROR UserAccountRepojdbc:45 - Account not found
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getLong(GeneratedResultSet.java:1361)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:38)
+	at com.revature.Main.main(Main.java:17)
+2019-06-22 12:32:23 ERROR UserAccountRepojdbc:22 - Looking for account by the name of: REVATURE
+2019-06-22 12:32:23 ERROR UserAccountRepojdbc:45 - Account not found
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getLong(GeneratedResultSet.java:1361)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:38)
+	at com.revature.Main.main(Main.java:17)
+2019-06-22 12:37:42 DEBUG UserAccountRepojdbc:24 - Looking for account by the name of: REVATURE
+2019-06-22 12:37:42 ERROR UserAccountRepojdbc:46 - Account not found
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setStringInternal(OraclePreparedStatement.java:5741)
+	at oracle.jdbc.driver.OraclePreparedStatement.setString(OraclePreparedStatement.java:5729)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setString(OraclePreparedStatementWrapper.java:289)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:28)
+	at com.revature.Main.main(Main.java:17)
+2019-06-22 12:38:21 DEBUG UserAccountRepojdbc:24 - Looking for account by the name of: REVATURE
+2019-06-22 12:38:21 ERROR UserAccountRepojdbc:46 - Account not found
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setStringInternal(OraclePreparedStatement.java:5741)
+	at oracle.jdbc.driver.OraclePreparedStatement.setString(OraclePreparedStatement.java:5729)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setString(OraclePreparedStatementWrapper.java:289)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:28)
+	at com.revature.Main.main(Main.java:17)
+2019-06-22 12:38:31 DEBUG UserAccountRepojdbc:24 - Looking for account by the name of: REVATURE
+2019-06-22 12:38:32 ERROR UserAccountRepojdbc:46 - Account not found
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getLong(GeneratedResultSet.java:1361)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:39)
+	at com.revature.Main.main(Main.java:17)
+2019-06-22 12:39:11 DEBUG UserAccountRepojdbc:24 - Looking for account by the name of: REVATURE
+2019-06-22 12:39:11 ERROR UserAccountRepojdbc:46 - Account not found
+java.sql.SQLSyntaxErrorException: ORA-01722: invalid number
+
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:450)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:399)
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1017)
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:655)
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:249)
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:566)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:215)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:58)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:776)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:897)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1034)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3820)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3867)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.executeQuery(OraclePreparedStatementWrapper.java:1502)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:30)
+	at com.revature.Main.main(Main.java:17)
+2019-06-22 12:39:26 DEBUG UserAccountRepojdbc:24 - Looking for account by the name of: REVATURE
+2019-06-22 12:39:42 DEBUG UserAccountRepojdbc:24 - Looking for account by the name of: REVATURE
+2019-06-22 12:39:42 ERROR UserAccountRepojdbc:46 - Account not found
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getLong(GeneratedResultSet.java:1361)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:39)
+	at com.revature.Main.main(Main.java:17)
+2019-06-22 12:40:58 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-22 12:40:58 ERROR UserAccountRepojdbc:47 - Account not found
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getLong(GeneratedResultSet.java:1361)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:40)
+	at com.revature.Main.main(Main.java:17)
+2019-06-22 12:41:44 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-22 12:41:45 ERROR UserAccountRepojdbc:47 - Account not found
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getLong(GeneratedResultSet.java:1361)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:40)
+	at com.revature.Main.main(Main.java:17)
+2019-06-22 12:42:10 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-22 12:42:11 ERROR UserAccountRepojdbc:47 - Account not found
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getLong(GeneratedResultSet.java:1361)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:40)
+	at com.revature.Main.main(Main.java:17)
+2019-06-22 12:49:46 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-22 12:49:46 ERROR UserAccountRepojdbc:47 - Account not found
+java.sql.SQLException: Invalid column name
+	at oracle.jdbc.driver.OracleStatement.getColumnIndex(OracleStatement.java:3965)
+	at oracle.jdbc.driver.InsensitiveScrollableResultSet.findColumn(InsensitiveScrollableResultSet.java:299)
+	at oracle.jdbc.driver.GeneratedResultSet.getLong(GeneratedResultSet.java:1361)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:40)
+	at com.revature.Main.main(Main.java:17)
+2019-06-22 12:51:00 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-22 13:14:43 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-22 13:15:07 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-22 13:19:43 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
