@@ -13,9 +13,9 @@ import com.revature.repository.UserAccountRepojdbc;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		UserAccountRepojdbc userRepo = new UserAccountRepojdbc();
-		userRepo.getUserAcct("REVATURE");
-		//ControlHandler control = new ControlHandler();
-		//control.userInput();
+		//UserAccountRepojdbc userRepo = new UserAccountRepojdbc();
+		//userRepo.getUserAcct("REVATURE");
+		ControlHandler control = new ControlHandler();
+		control.userInput();
 	}
 }

@@ -1,7 +1,7 @@
 package com.revature.controller;
 
 import java.util.Scanner;
-
+import com.revature.service.ServiceBridge;
 
 public class ControlHandler {
 
@@ -13,18 +13,23 @@ public void userInput(){
 	Boolean logdIn = false;
 	Boolean running = true;
 	String menuSt = "0";
+	String [] usrInfo = null;
+	ServiceBridge srvBrg = new ServiceBridge();
 	
 	while (running) {
 			//Not logged in Loop
 		if (logdIn == false) {
 				System.out.println("Username: ");
 				input = inp.nextLine();
+				//System.out.println("inp is: " + inp);
+				usrInfo = srvBrg.getUserInfo(input);
+				//System.out.println("Info check: " + usrInfo[1]);
 						
-			if(input.equals(usrNm) || input.equals("")) {
+			if(input.equals(usrInfo[1]) || input.equals("")) {
 				System.out.println("Password: ");
 				input = inp.nextLine();
 				
-				if(input.equals(pssWrd) || input.equals("")) {
+				if(input.equals(usrInfo[2]) || input.equals("")) {
 					System.out.println("Login succussful! Welcome " + usrNm + "!");
 					menuSt = "0";
 					logdIn = true;

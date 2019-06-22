@@ -21,7 +21,7 @@ public class ConnectionUtilPr0 {
 			return DriverManager.getConnection(url, username, password);
 			
 		}
-		
+		/**
 		public static void main(String[] args) {
 			try {
 				getConnection();
@@ -30,4 +30,5 @@ public class ConnectionUtilPr0 {
 				LOGGER.error("Could not connect.", e);
 			}
 		}
+		*/
 }

@@ -12,4 +12,6 @@ public interface UserAccountRepository {
 	
 	public long checkBalance();
 	
+	public long updateBalance();
+	
 }

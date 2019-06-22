@@ -255,3 +255,6 @@ java.sql.SQLException: Invalid column name
 2019-06-22 13:14:43 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
 2019-06-22 13:15:07 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
 2019-06-22 13:19:43 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-22 18:58:07 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-22 18:59:26 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-22 19:00:09 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE

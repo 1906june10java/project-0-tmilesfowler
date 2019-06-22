@@ -66,4 +66,10 @@ public class UserAccountRepojdbc implements UserAccountRepository{
 		return 0;
 	}
 	
+	@Override
+	public long updateBalance() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+	
 }
