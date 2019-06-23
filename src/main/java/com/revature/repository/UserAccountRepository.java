@@ -6,12 +6,6 @@ public interface UserAccountRepository {
 
 	public UserAccount getUserAcct(String user);
 	
-	public String checkUsername(String user);
-	
-	public String checkPassword(String password);
-	
-	public long checkBalance();
-	
-	public long updateBalance();
+	public boolean updateBalance(String userID, long balance);
 	
 }

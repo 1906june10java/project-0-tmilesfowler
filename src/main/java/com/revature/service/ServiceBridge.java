@@ -1,6 +1,7 @@
 package com.revature.service;
 
 import com.revature.repository.UserAccountRepojdbc;
+
 import com.revature.model.UserAccount;
 
 public class ServiceBridge {
@@ -18,7 +19,11 @@ public class ServiceBridge {
 			return tempArray;
 		}
 		
-		
+	}
+	
+	public void pushNewBalance(String user, long balance){
+		user = user.toUpperCase();
+		usrRepo.updateBalance(user, balance);
 	}
 	
 }

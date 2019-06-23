@@ -49,27 +49,27 @@ public class UserAccountRepojdbc implements UserAccountRepository{
 	}
 	
 	@Override
-	public String checkUsername(String user) {
+	public boolean updateBalance(String user, long balance) {
 		// TODO Auto-generated method stub
-		return null;
-	}
-	
-	@Override
-	public String checkPassword(String password) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-	
-	@Override
-	public long checkBalance() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	
-	@Override
-	public long updateBalance() {
-		// TODO Auto-generated method stub
-		return 0;
+		LOGGER.setLevel(Level.DEBUG);
+		try(Connection connection = ConnectionUtilPr0.getConnection()){
+			int parameterIndex = 0;
+			LOGGER.debug("Looking for account by the name of: " + user);
+			String sql = "UPDATE USERACCT SET U_BALANCE = ? WHERE U_NAME = ?";
+			
+			PreparedStatement statement = connection.prepareStatement(sql);
+			statement.setLong(++parameterIndex, balance);
+			statement.setString(++parameterIndex, user);
+			
+			if(statement.executeUpdate() > 0) {
+				return true;
+			}
+			
+		} catch(SQLException e){
+			return false;
+		}
+		
+		return false;
 	}
 	
 }

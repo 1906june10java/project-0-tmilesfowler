@@ -79,6 +79,7 @@ public void userInput(){
 				if(menuSt.equals("4")) {
 				//Logout
 					System.out.println("Goodbye!");
+					srvBrg.pushNewBalance(usrInfo [1], balance);
 					//menuSt = "0";
 					logdIn = false;
 				}
