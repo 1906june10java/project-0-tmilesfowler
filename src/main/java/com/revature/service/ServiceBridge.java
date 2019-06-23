@@ -9,11 +9,16 @@ public class ServiceBridge {
 	
 	public String [] getUserInfo(String userName) {
 		userName = userName.toUpperCase();
-		System.out.println("Getting: " + userName);
+		try {
 		UserAccount tempUser = usrRepo.getUserAcct(userName);
 		String [] tempArray = tempUser.toStrArray();
-		
 		return tempArray;
+		} catch (NullPointerException e){
+			String [] tempArray = {null, null, null, null};
+			return tempArray;
+		}
+		
+		
 	}
 	
 }

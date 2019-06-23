@@ -15,23 +15,23 @@ public void userInput(){
 	String menuSt = "0";
 	String [] usrInfo = null;
 	ServiceBridge srvBrg = new ServiceBridge();
+	long balance = 0;
 	
 	while (running) {
 			//Not logged in Loop
 		if (logdIn == false) {
 				System.out.println("Username: ");
 				input = inp.nextLine();
-				//System.out.println("inp is: " + inp);
 				usrInfo = srvBrg.getUserInfo(input);
-				//System.out.println("Info check: " + usrInfo[1]);
 						
-			if(input.equals(usrInfo[1]) || input.equals("")) {
+			if(input.equals(usrInfo[1].toLowerCase()) || input.equals("")) {
 				System.out.println("Password: ");
 				input = inp.nextLine();
 				
-				if(input.equals(usrInfo[2]) || input.equals("")) {
+				if(input.equals(usrInfo[2].toLowerCase()) || input.equals("")) {
 					System.out.println("Login succussful! Welcome " + usrNm + "!");
 					menuSt = "0";
+					balance = Long.valueOf(usrInfo[3]);
 					logdIn = true;
 				}
 				else {System.out.println("Invalid Password");}
@@ -51,8 +51,10 @@ public void userInput(){
 				
 				if(menuSt.equals("1")) {
 				//Deposit
-				System.out.println("How much money would you like to deposit?");
-				System.out.println("$" + inp.nextLine());
+				System.out.println("What amount would you like to deposit?");
+				input = inp.nextLine();
+				balance += Integer.valueOf(input);
+				System.out.println("Deposited $" + input + " new balance is: $" + balance);
 				System.out.println("What would you like to do next?\n0. Menu 1. Make Another Deposit  \n2. Withdraw 3. Check Balance 4. Logout");
 				menuSt = inp.nextLine();
 				}
@@ -60,14 +62,16 @@ public void userInput(){
 				if(menuSt.equals("2")) {
 				//Withdraw	
 				System.out.println("How much money would you like to withdraw?");
-				System.out.println("$" + inp.nextLine());
+				input = inp.nextLine();
+				balance -= Integer.valueOf(input);
+				System.out.println("Withdrew $" + input + " new balance is: $" + balance);
 				System.out.println("What would you like to do next?\n0. Menu 2. Make Another Withdrawal  \n1. Deposit 3. Check Balance 4. Logout");
 				menuSt = inp.nextLine();
 				}
 
 				if(menuSt.equals("3")) {
 				//Check Balance
-				System.out.println("Your balance is: ");
+				System.out.println("Your balance is: $" + balance);
 				System.out.println("What would you like to do next?\n0. Menu\n1. Deposit 2. Withdraw 4. Logout");
 				menuSt = inp.nextLine();
 				}
