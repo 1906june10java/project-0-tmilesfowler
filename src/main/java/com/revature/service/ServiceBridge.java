@@ -1,8 +1,8 @@
 package com.revature.service;
 
-import com.revature.repository.UserAccountRepojdbc;
-
+import com.revature.exception.NegNumberException;
 import com.revature.model.UserAccount;
+import com.revature.repository.UserAccountRepojdbc;
 
 public class ServiceBridge {
 
@@ -23,7 +23,17 @@ public class ServiceBridge {
 	
 	public void pushNewBalance(String user, long balance){
 		user = user.toUpperCase();
+		if (balance < 0) {
+			try {
+				throw new NegNumberException();
+			} catch(NegNumberException e) {
+				e.printStackTrace();
+				System.out.println("Balance below zero! Unable to push to server, resetting balance!");
+			}
+		}
+		else {
 		usrRepo.updateBalance(user, balance);
+		}
 	}
 	
 }

@@ -1,6 +1,8 @@
 package com.revature.controller;
 
 import java.util.Scanner;
+
+import com.revature.exception.InvalidMenuException;
 import com.revature.service.ServiceBridge;
 
 public class ControlHandler {
@@ -24,11 +26,11 @@ public void userInput(){
 				input = inp.nextLine();
 				usrInfo = srvBrg.getUserInfo(input);
 						
-			if(input.equals(usrInfo[1].toLowerCase()) || input.equals("")) {
+			if(input.equals(usrInfo[1].toLowerCase())) {
 				System.out.println("Password: ");
 				input = inp.nextLine();
 				
-				if(input.equals(usrInfo[2].toLowerCase()) || input.equals("")) {
+				if(input.equals(usrInfo[2].toLowerCase())) {
 					System.out.println("Login succussful! Welcome " + usrNm + "!");
 					menuSt = "0";
 					balance = Long.valueOf(usrInfo[3]);
@@ -82,6 +84,18 @@ public void userInput(){
 					srvBrg.pushNewBalance(usrInfo [1], balance);
 					//menuSt = "0";
 					logdIn = false;
+				}
+				
+				else if (!menuSt.equals("0")||!menuSt.equals("1")||!menuSt.equals("2")||!menuSt.equals("3")||!menuSt.equals("4")) {
+					try {
+						throw new InvalidMenuException();
+					} catch (InvalidMenuException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+						System.out.println("Invalid option, returning to menu!");
+						menuSt = "0";
+					}
+					
 				}
 				
 				else {
