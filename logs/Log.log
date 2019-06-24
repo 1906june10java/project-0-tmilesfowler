@@ -303,3 +303,137 @@ java.sql.SQLException: Invalid column name
 2019-06-24 10:59:42 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
 2019-06-24 11:06:27 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
 2019-06-24 11:06:50 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-24 11:34:38 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: RAVA
+2019-06-24 11:39:10 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: FNAF
+2019-06-24 11:42:14 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: FAFNKAL;
+2019-06-24 11:43:47 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: HHLJK;J
+2019-06-24 11:44:56 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JKLL
+2019-06-24 11:44:59 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: K;KL;
+2019-06-24 11:45:09 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: 
+2019-06-24 11:45:47 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-24 13:17:35 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-24 13:18:53 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-24 13:19:08 DEBUG UserAccountRepojdbc:57 - Looking for account by the name of: REVATURE
+2019-06-24 13:24:55 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUNIT
+2019-06-24 13:25:25 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUNIT
+2019-06-24 13:26:14 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUNIT
+2019-06-24 13:27:39 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-24 13:27:39 ERROR UserAccountRepojdbc:46 - Account not found
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setStringInternal(OraclePreparedStatement.java:5741)
+	at oracle.jdbc.driver.OraclePreparedStatement.setString(OraclePreparedStatement.java:5729)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setString(OraclePreparedStatementWrapper.java:289)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:29)
+	at com.revature.service.ServiceBridge.getUserInfo(ServiceBridge.java:14)
+	at com.revature.controller.ControlHandler.userInput(ControlHandler.java:28)
+	at com.revature.Driver.main(Driver.java:17)
+2019-06-24 13:27:53 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-24 13:27:53 ERROR UserAccountRepojdbc:46 - Account not found
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setStringInternal(OraclePreparedStatement.java:5741)
+	at oracle.jdbc.driver.OraclePreparedStatement.setString(OraclePreparedStatement.java:5729)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setString(OraclePreparedStatementWrapper.java:289)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:29)
+	at com.revature.service.ServiceBridge.getUserInfo(ServiceBridge.java:14)
+	at com.revature.controller.ControlHandler.userInput(ControlHandler.java:28)
+	at com.revature.Driver.main(Driver.java:17)
+2019-06-24 13:28:02 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUNIT
+2019-06-24 13:28:02 ERROR UserAccountRepojdbc:46 - Account not found
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setStringInternal(OraclePreparedStatement.java:5741)
+	at oracle.jdbc.driver.OraclePreparedStatement.setString(OraclePreparedStatement.java:5729)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setString(OraclePreparedStatementWrapper.java:289)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:29)
+	at com.revature.service.ServiceBridge.getUserInfo(ServiceBridge.java:14)
+	at com.revature.controller.ControlHandler.userInput(ControlHandler.java:28)
+	at com.revature.Driver.main(Driver.java:17)
+2019-06-24 13:28:17 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-24 13:28:31 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-24 13:29:35 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUNIT
+2019-06-24 13:30:42 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUNIT
+2019-06-24 13:32:02 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUNIT
+2019-06-24 13:33:23 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUNIT
+2019-06-24 13:34:43 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUNIT
+2019-06-24 13:36:53 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUNIT
+2019-06-24 13:36:53 ERROR UserAccountRepojdbc:56 - Account not found
+java.sql.SQLException: ResultSet.next was not called
+	at oracle.jdbc.driver.GeneratedScrollableResultSet.getLong(GeneratedScrollableResultSet.java:556)
+	at oracle.jdbc.driver.GeneratedResultSet.getLong(GeneratedResultSet.java:1361)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:35)
+	at com.revature.service.ServiceBridge.getUserInfo(ServiceBridge.java:14)
+	at com.revature.controller.ControlHandler.userInput(ControlHandler.java:28)
+	at com.revature.Driver.main(Driver.java:17)
+2019-06-24 13:38:24 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUNIT
+2019-06-24 13:38:36 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-24 13:38:48 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-24 13:39:26 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-24 13:41:20 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUNIT
+2019-06-24 13:42:06 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-24 13:42:06 ERROR UserAccountRepojdbc:46 - Account not found
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setStringInternal(OraclePreparedStatement.java:5741)
+	at oracle.jdbc.driver.OraclePreparedStatement.setString(OraclePreparedStatement.java:5729)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setString(OraclePreparedStatementWrapper.java:289)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:29)
+	at com.revature.service.ServiceBridge.getUserInfo(ServiceBridge.java:14)
+	at com.revature.controller.ControlHandler.userInput(ControlHandler.java:28)
+	at com.revature.Driver.main(Driver.java:17)
+2019-06-24 13:42:14 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUNIT
+2019-06-24 13:42:14 ERROR UserAccountRepojdbc:46 - Account not found
+java.sql.SQLException: Invalid column index
+	at oracle.jdbc.driver.OraclePreparedStatement.setStringInternal(OraclePreparedStatement.java:5741)
+	at oracle.jdbc.driver.OraclePreparedStatement.setString(OraclePreparedStatement.java:5729)
+	at oracle.jdbc.driver.OraclePreparedStatementWrapper.setString(OraclePreparedStatementWrapper.java:289)
+	at com.revature.repository.UserAccountRepojdbc.getUserAcct(UserAccountRepojdbc.java:29)
+	at com.revature.service.ServiceBridge.getUserInfo(ServiceBridge.java:14)
+	at com.revature.controller.ControlHandler.userInput(ControlHandler.java:28)
+	at com.revature.Driver.main(Driver.java:17)
+2019-06-24 13:44:48 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-24 13:44:56 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUNIT
+2019-06-24 13:45:57 DEBUG UserAccountRepojdbc:57 - Looking for account by the name of: JUNIT
+2019-06-24 13:46:09 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: REVATURE
+2019-06-24 13:47:19 DEBUG UserAccountRepojdbc:57 - Looking for account by the name of: REVATURE
+2019-06-24 13:57:52 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: revature
+2019-06-24 13:57:56 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: Revature
+2019-06-24 14:02:13 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUnit
+2019-06-24 14:02:35 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUnit
+2019-06-24 14:03:43 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUnit
+2019-06-24 14:04:44 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUnit
+2019-06-24 14:13:39 DEBUG UserAccountRepojdbc:57 - Looking for account by the name of: JUNIT
+2019-06-24 14:13:40 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUnit
+2019-06-24 14:13:40 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: NOTrevature
+2019-06-24 14:13:40 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: revature
+2019-06-24 14:15:12 DEBUG UserAccountRepojdbc:57 - Looking for account by the name of: JUnit
+2019-06-24 14:15:13 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUnit
+2019-06-24 14:15:14 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: NOTrevature
+2019-06-24 14:15:16 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: revature
+2019-06-24 14:15:28 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: Revature
+2019-06-24 14:15:54 DEBUG UserAccountRepojdbc:57 - Looking for account by the name of: JUnit
+2019-06-24 14:15:55 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUnit
+2019-06-24 14:15:56 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: NOTrevature
+2019-06-24 14:15:57 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: Revature
+2019-06-24 14:16:09 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: Revature
+2019-06-24 14:16:33 DEBUG UserAccountRepojdbc:57 - Looking for account by the name of: Revature
+2019-06-24 14:17:09 DEBUG UserAccountRepojdbc:57 - Looking for account by the name of: JUnit
+2019-06-24 14:17:10 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUnit
+2019-06-24 14:17:10 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: NOTrevature
+2019-06-24 14:17:10 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: Revature
+2019-06-24 14:17:29 DEBUG UserAccountRepojdbc:57 - Looking for account by the name of: JUnit
+2019-06-24 14:17:29 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUnit
+2019-06-24 14:17:29 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: NOTrevature
+2019-06-24 14:17:30 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: Revature
+2019-06-24 14:17:47 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUnit
+2019-06-24 14:18:53 DEBUG UserAccountRepojdbc:57 - Looking for account by the name of: JUnit
+2019-06-24 14:18:54 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUnit
+2019-06-24 14:18:54 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: NOTrevature
+2019-06-24 14:18:54 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: Revature
+2019-06-24 14:19:04 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUnit
+2019-06-24 14:20:48 DEBUG UserAccountRepojdbc:57 - Looking for account by the name of: JUnit
+2019-06-24 14:21:01 DEBUG UserAccountRepojdbc:57 - Looking for account by the name of: JUnit
+2019-06-24 14:21:02 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUnit
+2019-06-24 14:21:03 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: NOTrevature
+2019-06-24 14:21:06 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: Revature
+2019-06-24 14:21:14 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUnit
+2019-06-24 14:21:22 DEBUG UserAccountRepojdbc:57 - Looking for account by the name of: JUnit
+2019-06-24 14:22:29 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUnit
+2019-06-24 14:22:39 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUnit

@@ -26,12 +26,12 @@ public void userInput(){
 				input = inp.nextLine();
 				usrInfo = srvBrg.getUserInfo(input);
 						
-			if(input.equals(usrInfo[1].toLowerCase())) {
+			if(input.equals(usrInfo[1])) {
 				System.out.println("Password: ");
 				input = inp.nextLine();
 				
-				if(input.equals(usrInfo[2].toLowerCase())) {
-					System.out.println("Login succussful! Welcome " + usrNm + "!");
+				if(input.equals(usrInfo[2])) {
+					System.out.println("Login succussful! Welcome " + usrInfo[1] + "!");
 					menuSt = "0";
 					balance = Long.valueOf(usrInfo[3]);
 					logdIn = true;
@@ -86,7 +86,7 @@ public void userInput(){
 					logdIn = false;
 				}
 				
-				else if (!menuSt.equals("0")||!menuSt.equals("1")||!menuSt.equals("2")||!menuSt.equals("3")||!menuSt.equals("4")) {
+				else if (!menuSt.equals("0")&&!menuSt.equals("1")&&!menuSt.equals("2")&&!menuSt.equals("3")&&!menuSt.equals("4")) {
 					try {
 						throw new InvalidMenuException();
 					} catch (InvalidMenuException e) {

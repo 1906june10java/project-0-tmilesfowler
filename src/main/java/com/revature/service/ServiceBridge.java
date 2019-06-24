@@ -9,9 +9,10 @@ public class ServiceBridge {
 	UserAccountRepojdbc usrRepo = new UserAccountRepojdbc();
 	
 	public String [] getUserInfo(String userName) {
-		userName = userName.toUpperCase();
+		//userName = userName.toUpperCase();
 		try {
 		UserAccount tempUser = usrRepo.getUserAcct(userName);
+		//System.out.println("Found: " + tempUser.toString());
 		String [] tempArray = tempUser.toStrArray();
 		return tempArray;
 		} catch (NullPointerException e){
@@ -22,7 +23,6 @@ public class ServiceBridge {
 	}
 	
 	public void pushNewBalance(String user, long balance){
-		user = user.toUpperCase();
 		if (balance < 0) {
 			try {
 				throw new NegNumberException();
