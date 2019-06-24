@@ -49,7 +49,7 @@ public class UnitTests {
 		final String oldBalance = srvBrg.getUserInfo(userTst)[3];
 		final long newBalance = 150;
 		srvBrg.pushNewBalance(userTst, newBalance);
-		assertFalse(Long.valueOf(oldBalance) == newBalance);
+		assertFalse(oldBalance == srvBrg.getUserInfo(userTst)[3]);
 	}
 	
 	

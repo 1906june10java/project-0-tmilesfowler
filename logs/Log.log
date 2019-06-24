@@ -449,3 +449,10 @@ java.sql.SQLException: Invalid column index
 2019-06-24 16:00:54 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUnit
 2019-06-24 16:00:55 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: InvalidUser
 2019-06-24 16:00:57 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: Revature
+2019-06-24 16:04:35 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUnit
+2019-06-24 16:04:35 DEBUG UserAccountRepojdbc:57 - Looking for account by the name of: JUnit
+2019-06-24 16:04:36 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUnit
+2019-06-24 16:04:36 DEBUG UserAccountRepojdbc:57 - Looking for account by the name of: JUnit
+2019-06-24 16:04:36 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: JUnit
+2019-06-24 16:04:36 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: InvalidUser
+2019-06-24 16:04:37 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: Revature
