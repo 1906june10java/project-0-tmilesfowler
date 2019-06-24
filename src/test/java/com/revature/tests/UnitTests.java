@@ -2,6 +2,7 @@ package com.revature.tests;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 
 import org.junit.Rule;
 import org.junit.Test;
@@ -27,7 +28,7 @@ public class UnitTests {
 	
 	@Test
 	public void infoGetInvalid() {
-		final String userTst = "NOTrevature";
+		final String userTst = "InvalidUser";
 		final String [] expected = {null, null, null, null};
 		assertArrayEquals(expected, srvBrg.getUserInfo(userTst));
 	}
@@ -40,6 +41,15 @@ public class UnitTests {
 		final String expected = String.valueOf(newBalance);
 		srvBrg.pushNewBalance(userTst, newBalance);
 		assertEquals(expected, srvBrg.getUserInfo(userTst)[3]);
+	}
+	
+	@Test
+	public void differentBalance() {
+		final String userTst = "JUnit";
+		final String oldBalance = srvBrg.getUserInfo(userTst)[3];
+		final long newBalance = 150;
+		srvBrg.pushNewBalance(userTst, newBalance);
+		assertFalse(Long.valueOf(oldBalance) == newBalance);
 	}
 	
 	
