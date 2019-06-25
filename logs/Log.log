@@ -515,3 +515,26 @@ java.sql.SQLException: Invalid column index
 2019-06-25 12:55:18 DEBUG UserAccountRepojdbc:54 - Looking for account by the name of: Revature
 2019-06-25 12:55:35 DEBUG UserAccountRepojdbc:54 - Looking for account by the name of: Revature
 2019-06-25 14:44:11 DEBUG UserAccountRepojdbc:23 - Looking for account by the name of: revature
+2019-06-25 16:24:51 ERROR ControlHandler:131 - Invalid option, returning to menu!
+2019-06-25 16:32:30 DEBUG UserAccountRepojdbc:23 - Looking for account by the name of: Revature
+2019-06-25 16:32:30 DEBUG UserAccountRepojdbc:39 - My account is: UserAccount [ID = 1, Username = Revature, Password = p4ssw0rd, Balance = 500]
+2019-06-25 16:32:44 DEBUG UserAccountRepojdbc:54 - Looking for account by the name of: Revature
+2019-06-25 16:33:08 DEBUG UserAccountRepojdbc:54 - Looking for account by the name of: Revature
+2019-06-25 16:33:20 DEBUG UserAccountRepojdbc:23 - Looking for account by the name of: JUnit
+2019-06-25 16:33:20 DEBUG UserAccountRepojdbc:39 - My account is: UserAccount [ID = 2, Username = JUnit, Password = 4testing, Balance = 10]
+2019-06-25 16:34:03 DEBUG UserAccountRepojdbc:54 - Looking for account by the name of: JUnit
+2019-06-25 16:34:23 DEBUG UserAccountRepojdbc:23 - Looking for account by the name of: Revature
+2019-06-25 16:34:23 DEBUG UserAccountRepojdbc:39 - My account is: UserAccount [ID = 1, Username = Revature, Password = p4ssw0rd, Balance = 730]
+2019-06-25 16:36:34 DEBUG UserAccountRepojdbc:54 - Looking for account by the name of: Revature
+2019-06-25 16:36:49 DEBUG UserAccountRepojdbc:23 - Looking for account by the name of: JUnit
+2019-06-25 16:36:49 DEBUG UserAccountRepojdbc:39 - My account is: UserAccount [ID = 2, Username = JUnit, Password = 4testing, Balance = 165]
+2019-06-25 16:36:49 DEBUG UserAccountRepojdbc:54 - Looking for account by the name of: JUnit
+2019-06-25 16:36:50 DEBUG UserAccountRepojdbc:23 - Looking for account by the name of: JUnit
+2019-06-25 16:36:50 DEBUG UserAccountRepojdbc:39 - My account is: UserAccount [ID = 2, Username = JUnit, Password = 4testing, Balance = 150]
+2019-06-25 16:36:50 DEBUG UserAccountRepojdbc:54 - Looking for account by the name of: JUnit
+2019-06-25 16:36:50 DEBUG UserAccountRepojdbc:23 - Looking for account by the name of: JUnit
+2019-06-25 16:36:50 DEBUG UserAccountRepojdbc:39 - My account is: UserAccount [ID = 2, Username = JUnit, Password = 4testing, Balance = 10]
+2019-06-25 16:36:50 DEBUG UserAccountRepojdbc:23 - Looking for account by the name of: InvalidUser
+2019-06-25 16:36:50 ERROR ServiceBridge:23 - java.lang.NullPointerException
+2019-06-25 16:36:51 DEBUG UserAccountRepojdbc:23 - Looking for account by the name of: Revature
+2019-06-25 16:36:51 DEBUG UserAccountRepojdbc:39 - My account is: UserAccount [ID = 1, Username = Revature, Password = p4ssw0rd, Balance = 500]

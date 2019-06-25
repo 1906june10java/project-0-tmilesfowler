@@ -2,10 +2,14 @@ package com.revature.controller;
 
 import java.util.Scanner;
 
+import org.apache.log4j.Logger;
+
 import com.revature.exception.InvalidMenuException;
 import com.revature.service.ServiceBridge;
 
 public class ControlHandler {
+	
+	private static final Logger LOGGER = Logger.getLogger(ControlHandler.class); 
 	
 public ControlHandler(){
 	
@@ -22,6 +26,13 @@ public ControlHandler(){
 			//Not logged in Loop
 		if (logdIn == false) {
 				System.out.println("Username: ");
+				/* Change print to "Username or register new"
+				 * if(Register_new ){
+				 * Print type new username, then new password
+				 * Store those in variables and put them in srvBrg.regUser
+				 * Do normal login
+				 * }
+				 * */
 				input = inp.nextLine();
 				usrInfo = srvBrg.getUserInfo(input);
 						
@@ -43,13 +54,13 @@ public ControlHandler(){
 		else if (logdIn == true) {
 			
 				
-				if(menuSt.equals("0") || menuSt.toLowerCase().equals("menu")) {
+				if(menuSt.equals("0")) {
 				//Main Menu
 				System.out.println("\nType the number of the option you'd like to select!\n1. Deposit  2. Withdraw 3. Check Balance 4. Logout");
 				menuSt = inp.nextLine();
 				}
 				
-				if(menuSt.equals("1") || menuSt.toLowerCase().equals("deposit")) {
+				if(menuSt.equals("1")) {
 				//Deposit
 				System.out.println("\nWhat amount would you like to deposit? Current balance is " + balance);
 				input = inp.nextLine();
@@ -68,14 +79,14 @@ public ControlHandler(){
 				}
 				}
 				catch (NumberFormatException e) {
-					System.out.println("Invalid characters used.");
+					LOGGER.error("Invalid characters used.");
 					System.out.println("\nWhat would you like to do next?\n0. Menu 1. Make Another Deposit  \n2. Withdraw 3. Check Balance 4. Logout");
 					menuSt = inp.nextLine();
 				}
 				
 				}
 				
-				if(menuSt.equals("2") || menuSt.toLowerCase().equals("withdraw")) {
+				if(menuSt.equals("2")) {
 				//Withdraw	
 				System.out.println("How much money would you like to withdraw? Current balance is " + balance);
 				input = inp.nextLine();
@@ -98,20 +109,20 @@ public ControlHandler(){
 				menuSt = inp.nextLine();
 				}
 				} catch (NumberFormatException e) {
-					System.out.println("Invalid characters used.");
+					LOGGER.error("Invalid characters used.");
 					System.out.println("\nWhat would you like to do next?\n0. Menu 1. Make Another Deposit  \n2. Withdraw 3. Check Balance 4. Logout");
 					menuSt = inp.nextLine();
 				}
 				}
 
-				if(menuSt.equals("3") || menuSt.toLowerCase().equals("balance")) {
+				if(menuSt.equals("3")) {
 				//Check Balance
 				System.out.println("Your balance is: $" + balance);
 				System.out.println("\nWhat would you like to do next?\n0. Menu\n1. Deposit 2. Withdraw 4. Logout");
 				menuSt = inp.nextLine();
 				}
 				
-				if(menuSt.equals("4") || menuSt.toLowerCase().equals("logout")) {
+				if(menuSt.equals("4")) {
 				//Logout
 					System.out.println("Goodbye!\n");
 					//menuSt = "0";
@@ -123,8 +134,8 @@ public ControlHandler(){
 						throw new InvalidMenuException();
 					} catch (InvalidMenuException e) {
 						// TODO Auto-generated catch block
-						e.printStackTrace();
-						System.out.println("Invalid option, returning to menu!");
+						//e.printStackTrace();
+						LOGGER.error("Invalid option, returning to menu!");
 						menuSt = "0";
 					}
 					
