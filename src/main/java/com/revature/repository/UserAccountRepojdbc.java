@@ -36,7 +36,7 @@ public class UserAccountRepojdbc implements UserAccountRepository{
 					result.getLong("U_BALANCE")
 					);
 			
-			System.out.println("My account is: " + myAcct.toString());
+			LOGGER.debug("My account is: " + myAcct.toString());
 			return myAcct;
 		}
 		
