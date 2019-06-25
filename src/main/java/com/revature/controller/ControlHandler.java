@@ -6,10 +6,9 @@ import com.revature.exception.InvalidMenuException;
 import com.revature.service.ServiceBridge;
 
 public class ControlHandler {
-
-public void userInput(){
-	String usrNm = "revature";
-	String pssWrd = "p4ssw0rd";
+	
+public ControlHandler(){
+	
 	Scanner inp = new Scanner(System.in); 
 	String input = "0";
 	Boolean logdIn = false;
@@ -53,20 +52,22 @@ public void userInput(){
 				
 				if(menuSt.equals("1")) {
 				//Deposit
-				System.out.println("What amount would you like to deposit?");
+				System.out.println("What amount would you like to deposit? Current balance is " + balance);
 				input = inp.nextLine();
 				balance += Integer.valueOf(input);
 				System.out.println("Deposited $" + input + " new balance is: $" + balance);
+				srvBrg.pushNewBalance(usrInfo [1], balance);
 				System.out.println("What would you like to do next?\n0. Menu 1. Make Another Deposit  \n2. Withdraw 3. Check Balance 4. Logout");
 				menuSt = inp.nextLine();
 				}
 				
 				if(menuSt.equals("2")) {
 				//Withdraw	
-				System.out.println("How much money would you like to withdraw?");
+				System.out.println("How much money would you like to withdraw? Current balance is " + balance);
 				input = inp.nextLine();
 				balance -= Integer.valueOf(input);
 				System.out.println("Withdrew $" + input + " new balance is: $" + balance);
+				srvBrg.pushNewBalance(usrInfo [1], balance);
 				System.out.println("What would you like to do next?\n0. Menu 2. Make Another Withdrawal  \n1. Deposit 3. Check Balance 4. Logout");
 				menuSt = inp.nextLine();
 				}
@@ -81,7 +82,6 @@ public void userInput(){
 				if(menuSt.equals("4")) {
 				//Logout
 					System.out.println("Goodbye!");
-					srvBrg.pushNewBalance(usrInfo [1], balance);
 					//menuSt = "0";
 					logdIn = false;
 				}

@@ -18,8 +18,6 @@ public class UserAccountRepojdbc implements UserAccountRepository{
 	@Override
 	public UserAccount getUserAcct(String user) {
 		// TODO Auto-generated method stub
-		LOGGER.setLevel(Level.DEBUG);
-		//System.out.println("Looking for account by the name of: " + user);
 		try(Connection connection = ConnectionUtilPr0.getConnection()){
 			int parameterIndex = 0;
 		LOGGER.debug("Looking for account by the name of: " + user);
@@ -51,7 +49,6 @@ public class UserAccountRepojdbc implements UserAccountRepository{
 	@Override
 	public boolean updateBalance(String user, long balance) {
 		// TODO Auto-generated method stub
-		LOGGER.setLevel(Level.DEBUG);
 		try(Connection connection = ConnectionUtilPr0.getConnection()){
 			int parameterIndex = 0;
 			LOGGER.debug("Looking for account by the name of: " + user);

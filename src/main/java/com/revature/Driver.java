@@ -13,7 +13,6 @@ public class Driver {
 
 	public static void main(String[] args) throws IOException {
 		
-		ControlHandler control = new ControlHandler();
-		control.userInput();
+		new ControlHandler();
 	}
 }
