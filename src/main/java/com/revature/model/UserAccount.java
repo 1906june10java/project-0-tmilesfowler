@@ -2,10 +2,10 @@ package com.revature.model;
 
 public class UserAccount implements Comparable<Object>{
 
-	long idNum = 1;
-	String userName = "revature";
-	String passWord = "p4ssw0rd";
-	long balance;
+	long idNum = 0;
+	String userName = null;
+	String passWord = null;
+	long balance = 0;
 	
 	public UserAccount(long idNum, String userName, String passWord, long balance) {
 		super();
@@ -102,7 +102,7 @@ public class UserAccount implements Comparable<Object>{
 
 	@Override
 	public String toString() {
-		return "UserAccount [idNum=" + idNum + ", userName=" + userName + ", passWord=" + passWord + ", balance="
+		return "UserAccount [ID = " + idNum + ", Username = " + userName + ", Password = " + passWord + ", Balance = "
 				+ balance + "]";
 	}
 	

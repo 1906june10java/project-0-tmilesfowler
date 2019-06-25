@@ -43,43 +43,71 @@ public ControlHandler(){
 		else if (logdIn == true) {
 			
 				
-				if(menuSt.equals("0")) {
+				if(menuSt.equals("0") || menuSt.toLowerCase().equals("menu")) {
 				//Main Menu
 				System.out.println("Type the number of the option you'd like to select!\n1. Deposit  2. Withdraw 3. Check Balance 4. Logout");
 				menuSt = inp.nextLine();
 				System.out.println("Current Menu: " + menuSt);
 				}
 				
-				if(menuSt.equals("1")) {
+				if(menuSt.equals("1") || menuSt.toLowerCase().equals("deposit")) {
 				//Deposit
 				System.out.println("What amount would you like to deposit? Current balance is " + balance);
 				input = inp.nextLine();
+				try {
+				if(Integer.valueOf(input) < 0) {
+					System.out.println("Negative deposits not allowed.");
+					System.out.println("What would you like to do next?\n0. Menu 1. Make Another Deposit  \n2. Withdraw 3. Check Balance 4. Logout");
+					menuSt = inp.nextLine();
+				}
+				else {
 				balance += Integer.valueOf(input);
 				System.out.println("Deposited $" + input + " new balance is: $" + balance);
 				srvBrg.pushNewBalance(usrInfo [1], balance);
 				System.out.println("What would you like to do next?\n0. Menu 1. Make Another Deposit  \n2. Withdraw 3. Check Balance 4. Logout");
 				menuSt = inp.nextLine();
 				}
+				}
+				catch (NumberFormatException e) {
+					System.out.println("Invalid characters used.");
+					System.out.println("What would you like to do next?\n0. Menu 1. Make Another Deposit  \n2. Withdraw 3. Check Balance 4. Logout");
+					menuSt = inp.nextLine();
+				}
 				
-				if(menuSt.equals("2")) {
+				}
+				
+				if(menuSt.equals("2") || menuSt.toLowerCase().equals("withdraw")) {
 				//Withdraw	
 				System.out.println("How much money would you like to withdraw? Current balance is " + balance);
 				input = inp.nextLine();
+				try {
+				if (Integer.valueOf(input) > balance) {
+					System.out.println("Not enough funds to withdraw desired amount.");
+					System.out.println("What would you like to do next?\n0. Menu 2. Make Another Withdrawal  \n1. Deposit 3. Check Balance 4. Logout");
+					menuSt = inp.nextLine();
+				}
+				else {
 				balance -= Integer.valueOf(input);
 				System.out.println("Withdrew $" + input + " new balance is: $" + balance);
 				srvBrg.pushNewBalance(usrInfo [1], balance);
 				System.out.println("What would you like to do next?\n0. Menu 2. Make Another Withdrawal  \n1. Deposit 3. Check Balance 4. Logout");
 				menuSt = inp.nextLine();
 				}
+				} catch (NumberFormatException e) {
+					System.out.println("Invalid characters used.");
+					System.out.println("What would you like to do next?\n0. Menu 1. Make Another Deposit  \n2. Withdraw 3. Check Balance 4. Logout");
+					menuSt = inp.nextLine();
+				}
+				}
 
-				if(menuSt.equals("3")) {
+				if(menuSt.equals("3") || menuSt.toLowerCase().equals("balance")) {
 				//Check Balance
 				System.out.println("Your balance is: $" + balance);
 				System.out.println("What would you like to do next?\n0. Menu\n1. Deposit 2. Withdraw 4. Logout");
 				menuSt = inp.nextLine();
 				}
 				
-				if(menuSt.equals("4")) {
+				if(menuSt.equals("4") || menuSt.toLowerCase().equals("logout")) {
 				//Logout
 					System.out.println("Goodbye!");
 					//menuSt = "0";
