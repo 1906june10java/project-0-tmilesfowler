@@ -1,5 +1,7 @@
 package com.revature.service;
 
+import java.util.List;
+
 import org.apache.log4j.Logger;
 
 import com.revature.exception.NegNumberException;
@@ -41,17 +43,31 @@ public class ServiceBridge {
 		}
 	}
 	
-	/* public boolean registerNewUser(String user, String password){
-	 * 		
-	 * 		UserAccount [] temp = srvBrg.getAllUsers(returns an array that sizes based on the highest index, or maybe a list);
-	 * 		boolean newAccount = true;
-	 * 		
-	 * 		for(UserAccount existingAccount : temp){
-	 * 			if (user == existingAccount.toArray[1]){
-	 * 			
-	 * 			}
-	 * 		}
-	 * }
-	 * */
+	public boolean registerNewUser(String user, String password){
+		
+		List <UserAccount> temp = usrRepo.getAllUsers();
+		boolean newAccount = true;
+	 
+	 		for(UserAccount existingAccount : temp){
+	 			//System.out.println(existingAccount.toString());
+	 			//System.out.println(user + " vs "+ existingAccount.toStrArray()[1]);
+	 			if (user.equals(existingAccount.toStrArray()[1])){
+	 				newAccount = false;
+	 			}
+	 			
+	 		}
+	 
+	 		if(newAccount == true){
+	 		usrRepo.createUserAccount(temp.size()+1, user, password);
+	 		System.out.println("Account created! Welcome," + user + "!");
+	 		return true;
+	 		}
+	 		
+	 		else {
+	 		LOGGER.error("Username already in use!");	
+	 		return false;
+	 		}
+	 }
+	 
 	
 }

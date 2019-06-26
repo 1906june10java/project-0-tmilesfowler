@@ -37,7 +37,7 @@ public class UnitTests {
 	@Test
 	public void balanceChange() {
 		final String userTst = "JUnit";
-		final long newBalance = 10;
+		final long newBalance = 300;
 		final String expected = String.valueOf(newBalance);
 		srvBrg.pushNewBalance(userTst, newBalance);
 		assertEquals(expected, srvBrg.getUserInfo(userTst)[3]);
@@ -47,7 +47,7 @@ public class UnitTests {
 	public void differentBalance() {
 		final String userTst = "JUnit";
 		final String oldBalance = srvBrg.getUserInfo(userTst)[3];
-		final long newBalance = 150;
+		final long newBalance = 750;
 		srvBrg.pushNewBalance(userTst, newBalance);
 		assertFalse(oldBalance == srvBrg.getUserInfo(userTst)[3]);
 	}

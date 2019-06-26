@@ -538,3 +538,48 @@ java.sql.SQLException: Invalid column index
 2019-06-25 16:36:50 ERROR ServiceBridge:23 - java.lang.NullPointerException
 2019-06-25 16:36:51 DEBUG UserAccountRepojdbc:23 - Looking for account by the name of: Revature
 2019-06-25 16:36:51 DEBUG UserAccountRepojdbc:39 - My account is: UserAccount [ID = 1, Username = Revature, Password = p4ssw0rd, Balance = 500]
+2019-06-25 19:53:06 DEBUG UserAccountRepojdbc:24 - Looking for account by the name of: NewUser
+2019-06-25 19:53:07 ERROR ServiceBridge:25 - java.lang.NullPointerException
+2019-06-25 19:53:07 DEBUG UserAccountRepojdbc:51 - Getting all users
+2019-06-25 19:54:52 DEBUG UserAccountRepojdbc:24 - Looking for account by the name of: NewUser
+2019-06-25 19:54:52 ERROR ServiceBridge:25 - java.lang.NullPointerException
+2019-06-25 19:54:52 DEBUG UserAccountRepojdbc:51 - Getting all users
+2019-06-25 19:55:46 DEBUG UserAccountRepojdbc:24 - Looking for account by the name of: NewUser
+2019-06-25 19:55:46 ERROR ServiceBridge:25 - java.lang.NullPointerException
+2019-06-25 19:55:46 DEBUG UserAccountRepojdbc:51 - Getting all users
+2019-06-25 19:57:15 DEBUG UserAccountRepojdbc:24 - Looking for account by the name of: NewUser
+2019-06-25 19:57:16 ERROR ServiceBridge:25 - java.lang.NullPointerException
+2019-06-25 19:57:16 DEBUG UserAccountRepojdbc:51 - Getting all users
+2019-06-25 19:58:49 DEBUG UserAccountRepojdbc:24 - Looking for account by the name of: NewUser
+2019-06-25 19:58:49 ERROR ServiceBridge:25 - java.lang.NullPointerException
+2019-06-25 19:58:49 DEBUG UserAccountRepojdbc:51 - Getting all users
+2019-06-25 19:59:28 DEBUG UserAccountRepojdbc:24 - Looking for account by the name of: NewUser
+2019-06-25 19:59:28 ERROR ServiceBridge:25 - java.lang.NullPointerException
+2019-06-25 19:59:28 DEBUG UserAccountRepojdbc:51 - Getting all users
+2019-06-25 20:01:25 DEBUG UserAccountRepojdbc:24 - Looking for account by the name of: NewUser
+2019-06-25 20:01:26 ERROR ServiceBridge:25 - java.lang.NullPointerException
+2019-06-25 20:01:26 DEBUG UserAccountRepojdbc:51 - Getting all users
+2019-06-25 20:02:46 DEBUG UserAccountRepojdbc:24 - Looking for account by the name of: NewUser
+2019-06-25 20:02:46 ERROR ServiceBridge:25 - java.lang.NullPointerException
+2019-06-25 20:02:46 DEBUG UserAccountRepojdbc:51 - Getting all users
+2019-06-25 20:03:11 DEBUG UserAccountRepojdbc:24 - Looking for account by the name of: NewUser
+2019-06-25 20:03:12 ERROR ServiceBridge:25 - java.lang.NullPointerException
+2019-06-25 20:03:12 DEBUG UserAccountRepojdbc:51 - Getting all users
+2019-06-25 20:33:02 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: NewUser
+2019-06-25 20:33:02 ERROR ServiceBridge:25 - java.lang.NullPointerException
+2019-06-25 20:33:02 DEBUG UserAccountRepojdbc:52 - Getting all users
+2019-06-25 20:33:02 DEBUG UserAccountRepojdbc:81 - Creating account: RegisterTest, Regg13
+2019-06-25 20:33:15 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: RegisterTest
+2019-06-25 20:33:15 DEBUG UserAccountRepojdbc:41 - My account is: UserAccount [ID = 3, Username = RegisterTest, Password = Regg13, Balance = 0]
+2019-06-25 20:35:25 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: RegisterTest
+2019-06-25 20:35:25 DEBUG UserAccountRepojdbc:41 - My account is: UserAccount [ID = 3, Username = RegisterTest, Password = Regg13, Balance = 0]
+2019-06-25 20:49:23 DEBUG UserAccountRepojdbc:25 - Looking for account by the name of: NewUser
+2019-06-25 20:49:23 ERROR ServiceBridge:25 - java.lang.NullPointerException
+2019-06-25 20:49:23 DEBUG UserAccountRepojdbc:52 - Getting all users
+2019-06-25 21:22:04 DEBUG UserAccountRepojdbc:24 - Looking for account by the name of: Revature
+2019-06-25 21:22:04 DEBUG UserAccountRepojdbc:40 - My account is: UserAccount [ID = 1, Username = Revature, Password = p4ssw0rd, Balance = 500]
+2019-06-25 21:22:48 DEBUG UserAccountRepojdbc:51 - Getting all users
+2019-06-25 21:22:49 DEBUG UserAccountRepojdbc:80 - Creating account: SecondTest, 2testsRbest
+2019-06-25 21:23:07 DEBUG UserAccountRepojdbc:24 - Looking for account by the name of: SecondTest
+2019-06-25 21:23:07 DEBUG UserAccountRepojdbc:40 - My account is: UserAccount [ID = 4, Username = SecondTest, Password = 2testsRbest, Balance = 0]
+2019-06-25 21:23:36 DEBUG UserAccountRepojdbc:107 - Looking for account by the name of: SecondTest

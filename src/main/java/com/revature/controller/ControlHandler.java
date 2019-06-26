@@ -19,23 +19,35 @@ public ControlHandler(){
 	Boolean running = true;
 	String menuSt = "0";
 	String [] usrInfo = null;
+	String regUsr = null;
+	String regPass = null;
 	ServiceBridge srvBrg = new ServiceBridge();
 	long balance = 0;
 	
 	while (running) {
 			//Not logged in Loop
 		if (logdIn == false) {
+				System.out.println("Would you like to log in, or register a new account? \n1. Log in   2. register");
+				input = inp.nextLine();
+				
+			if(input.equals("2")) {	
+				System.out.println("What will your username be?");
+				input = inp.nextLine();
+				regUsr = input;
+				
+				System.out.println("What will your password be?");
+				input = inp.nextLine();
+				regPass = input;
+				
+				srvBrg.registerNewUser(regUsr, regPass);
+				input = "1";
+			}
+			
+			if(input.equals("1")) {
 				System.out.println("Username: ");
-				/* Change print to "Username or register new"
-				 * if(Register_new ){
-				 * Print type new username, then new password
-				 * Store those in variables and put them in srvBrg.regUser
-				 * Do normal login
-				 * }
-				 * */
 				input = inp.nextLine();
 				usrInfo = srvBrg.getUserInfo(input);
-						
+				
 			if(input.equals(usrInfo[1])) {
 				System.out.println("Password: ");
 				input = inp.nextLine();
@@ -50,6 +62,11 @@ public ControlHandler(){
 			}
 			else {System.out.println("Invalid Username\n");}
 		}
+			
+			else {System.out.println("Invalid Input\n");}
+			
+		}
+		
 		
 		else if (logdIn == true) {
 			
